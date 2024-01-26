@@ -1,0 +1,132 @@
+body{
+  font-family: arial;
+  background: linear-gradient(135deg, #8052ec, #d161ff);
+  overflow: hidden;
+  width: 600px;
+  height: 600px;
+}
+.area{
+  width: 300px;
+  height: 300px;
+  background-color: linear-gradient(135deg, #8052ec, #d161ff);
+  display: grid;
+  grid-template-columns: 90px 90px 90px;
+  grid-template-rows: 90px 90px 90px;
+  column-gap: 10px;
+  row-gap: 10px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.box{
+  background-color: white;
+  font-size: 25px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.reset-score{
+  top: 50%;
+  bottom: 40%;
+}
+.reset-game{
+  top: 40%;
+  bottom: 60%;
+}
+.reset-game,
+.reset-score{
+  font-size: 1.3em;
+  width: 150px;
+  height: 60px;
+  border-radius: 8px;
+  background-color: #0a0027;
+  color: #ffffff;
+  border: none;
+  position: absolute;
+  right: 60px;
+  display: block;
+  cursor: pointer;
+}
+
+.o-score,
+.x-score,
+.tie-score,
+.title{
+  color: #ffffff;
+  font-size: 30px;
+  font-family: 'Score Board', sans-serif;
+  position: absolute;
+  
+}
+.x-score{
+  bottom: 5%;
+}
+.o-score{
+  bottom: 5%;
+  right: 1%;
+                                 
+}
+.tie-score{
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  
+}
+
+.title{
+  position: absolute;
+  bottom: 23%;
+  left: 50%;
+  transform: translateX(-55%);
+}
+
+
+@media screen and (min-width: 956px) and (min-height: 779px) {
+  .reset-game{
+    top: 40%;
+  }
+}
+
+@media screen and (min-width: 390px) and (min-height: 844px) {
+  .reset-game{
+    top: 45%;
+    bottom: 55%;
+  };
+};
+@media screen and (max-width: 800px) and (max-height: 1100px) {
+  .reset-game{
+    top: 45%;
+    bottom: 55%;
+  }
+}
+
+@media screen and (min-width: 801px) and (min-height: 1101px) {
+.reset-game{
+  top: 43%;
+  bottom: 57%;
+}
+}
+@media screen and (max-width: 1023px) and (max-height: 599px) {
+  .reset-game{
+    top: 43%;
+    bottom: 57%;
+  }
+}
+@media screen and (min-width: 280px) and (min-height: 653px) {
+  .reset-game{
+    top: 45%;
+  }
+}
+
+
+@media screen and (min-width: 1024px) and (min-height: 600px) {
+  .reset-game{
+    top: 37%;
+  }
+}
+

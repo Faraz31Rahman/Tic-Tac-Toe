@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="Tic-Tac-Toe.css">
+    <link href="https://fonts.cdnfonts.com/css/score-board" rel="stylesheet">
+  </head>
+  <body>
+    <div class="area">
+      <div class="box box00" onclick="
+          gameClick(0,0);
+        "></div>
+      <div class="box box01" onclick="
+          gameClick(0,1);
+        "></div>
+      <div class="box box02" onclick="
+          gameClick(0,2);
+        "></div>
+      <div class="box box10" onclick="
+          gameClick(1,0);
+        "></div>
+      <div class="box box11" onclick="
+          gameClick(1,1);
+        "></div>
+      <div class="box box12" onclick="
+          gameClick(1,2);
+        "></div>
+      <div class="box box20" onclick="
+          gameClick(2,0);
+        "></div>
+      <div class="box box21" onclick="
+          gameClick(2,1);
+        "></div>
+      <div class="box box22" onclick="
+          gameClick(2,2);
+        "></div>
+    </div>
+    
+    <div class="js-scoreX x-score"></div>
+    <div class="js-title title"></div>
+    <div class="js-tie-score tie-score"></div>
+    <div class="js-scoreO o-score"></div>
+
+    <button class="js-reset-game reset-game">Reset Game</button>
+    <button class="js-reset-score reset-score">Reset Score</button>
+    
+    <script src="Tic-Tac-Toe.js"></script>
+  </body>
+</html>
